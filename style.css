@@ -1,19 +1,11 @@
-body {
-    background-image: url("coeur-casse.png");
-    background-size: cover;
-    background-color: #994D4D;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
 header {
     text-align: center;
     padding: 10px;
-    background-color: #fff;
+    background-color: #454545;
 }
 
 .Accueil a {
-    text-decoration: none;
+    text-decoration: white;
     color: #fff;
 }
 
@@ -43,7 +35,7 @@ main {
 }
 
 button {
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
     padding: 10px 20px;
     border: none;
