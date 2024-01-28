@@ -4,69 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat en ligne</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        #chat-box {
-            border: 1px solid #6d6d6d;
-            padding: 10px;
-            height: 300px;
-            overflow-y: scroll;
-        }
-
-        #message-input {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 5px;
-            margin-top: 10px;
-        }
-
-        #send-button {
-            width: 100%;
-            box-sizing: border-box;
-            padding: 5px;
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <div class="Acceuil">
-            <a href="index.html">Accueil</a>
-        </div>
-    </header>
-    <div id="chat-box"></div>
-    <input type="text" id="message-input" placeholder="Tapez votre message..." onkeypress="handleKeyPress(event)">
-    <button id="send-button" onclick="sendMessage()">Envoyer</button>
+    <div id="chat-container"></div>
+    <input type="text" id="message-input" placeholder="Entrez votre message">
+    <button onclick="sendMessage()">Envoyer</button>
 
-    <script>
-        function sendMessage() {
-            var messageInput = document.getElementById('message-input');
-            var chatBox = document.getElementById('chat-box');
-
-            var message = messageInput.value;
-            if (message.trim() === '') {
-                return;
-            }
-
-            var timestamp = new Date().toLocaleTimeString();
-            var chatMessage = `<p><strong>${timestamp}</strong> - ${message}</p>`;
-            
-            chatBox.innerHTML += chatMessage;
-            messageInput.value = '';
-            chatBox.scrollTop = chatBox.scrollHeight;
-        }
-
-        function handleKeyPress(event) {
-            // Vérifier si la touche pressée est "Entrée" (code 13)
-            if (event.keyCode === 13) {
-                sendMessage(); // Appeler la fonction sendMessage() lorsque la touche "Entrée" est pressée
-            }
-        }
-    </script>
+    <script src="chat.js"></script>
 </body>
 </html>
