@@ -1,42 +1,72 @@
-header {
-    text-align: center; /* Centrer le texte dans le header */
-    padding: 10px; /* Ajout de rembourrage pour le header */
-    background-color: #fff; /* Ajout d'une couleur de fond pour le header */
+body {
+    background-image: url("coeur-casse.png");
+    background-size: cover;
+    background-color: #994D4D;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.Acceuil {
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.Accueil a {
     text-decoration: none;
-    color: #333; /* Couleur du texte du lien */
+    color: #fff;
 }
 
 main {
-    text-align: center; /* Centrer le contenu principal */
-    padding: 20px; /* Ajout de rembourrage pour le contenu principal */
-    color: #fff; /* Couleur du texte principal */
+    text-align: center;
+    padding: 20px;
+    color: #fff;
 }
 
-p {
-    font-size: 1.5em; /* Ajustement de la taille de la police pour le paragraphe */
+.embed-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+}
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .button {
-    margin-top: 20px; /* Ajout d'un espacement entre les boutons */
+    margin-top: 20px;
 }
 
 button {
-    background-color: #333; /* Couleur de fond du bouton */
-    color: #fff; /* Couleur du texte du bouton */
-    padding: 10px 20px; /* Ajout de rembourrage au bouton */
-    border: none; /* Suppression de la bordure du bouton */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
     cursor: pointer;
     border-radius: 10%;
 }
 
 button:hover {
-    background-color: #555; /* Couleur de fond au survol du bouton */
+    background-color: #555;
 }
-.embed-container iframe{
+
+.embed-container {
     position: relative;
-    width: min-content;
-    height: min-content;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
 }
+
+.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
